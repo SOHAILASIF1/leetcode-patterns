@@ -40,7 +40,7 @@
 //brute force
 let nums=[1,1,1,3,3,4,3,2,4,2]
 for (let i = 0; i < nums.length; i++) {
-    for (let j = i+1; j < array.length; j++) {
+    for (let j = i+1; j < nums.length; j++) {
         if (arr[i]===arr[j]) {
             return true
             
