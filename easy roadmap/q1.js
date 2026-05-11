@@ -38,18 +38,38 @@
 
 //Soulation
 //brute force
-let nums=[1,1,1,3,3,4,3,2,4,2]
-for (let i = 0; i < nums.length; i++) {
-    for (let j = i+1; j < nums.length; j++) {
-        if (nums[i]===nums[j]) {
-            console.log(true);
+// for (let i = 0; i < nums.length; i++) {
+//     for (let j = i+1; j < nums.length; j++) {
+//         if (nums[i]===nums[j]) {
+//             console.log(true);
             
             
-        }
+//         }
 
         
         
+//     }
+// }
+// console.log(false);
+
+
+//sorting method
+let nums=[1,1,1,3,3,4,3,2,4,2]
+
+
+function contain(nums) {
+    nums.sort((a,b)=>a-b )
+    for (let i = 0; i < nums.length; i++) {
+        if (arr[i]==arr[i+1]) {
+            return true
+        }
+        
     }
+    return false
+    
 }
-console.log(false);
+console.log(contain(nums));
+
+
+
 
