@@ -34,3 +34,7 @@
 
 // 1 <= nums.length <= 105
 // -109 <= nums[i] <= 109
+
+
+//Soulation
+//brute force
