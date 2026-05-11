@@ -60,7 +60,7 @@ let nums=[1,1,1,3,3,4,3,2,4,2]
 function contain(nums) {
     nums.sort((a,b)=>a-b )
     for (let i = 0; i < nums.length; i++) {
-        if (arr[i]==arr[i+1]) {
+        if (nums[i]==nums[i+1]) {
             return true
         }
         
