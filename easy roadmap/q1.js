@@ -54,21 +54,39 @@
 
 
 //sorting method
-let nums=[1,2,3,4]
+// let nums=[1,2,3,4]
 
 
-function contain(nums) {
-    nums.sort((a,b)=>a-b )
-    for (let i = 0; i < nums.length; i++) {
-        if (nums[i]==nums[i+1]) {
+// function contain(nums) {
+//     nums.sort((a,b)=>a-b )
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i]==nums[i+1]) {
+//             return true
+//         }
+        
+//     }
+//     return false
+    
+// }
+// console.log(contain(nums));
+
+//with hashmap 
+let arr=[1,2,3,4,1,2,3,4]
+let set=new Set()
+function containdupl(arr) {
+    for (let num of arr){
+        if (set.has(num)) {
             return true
-        }
+        
+    }
+    set.add(numm)
         
     }
     return false
     
+    
 }
-console.log(contain(nums));
+console.log(containdupl(arr));
 
 
 
