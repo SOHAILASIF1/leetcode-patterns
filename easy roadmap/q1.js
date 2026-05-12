@@ -79,7 +79,7 @@ function containdupl(arr) {
             return true
         
     }
-    set.add(numm)
+    set.add(num)
         
     }
     return false
