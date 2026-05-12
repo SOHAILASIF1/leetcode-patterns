@@ -71,7 +71,7 @@
 // console.log(contain(nums));
 
 //with hashmap 
-let arr=[1,2,3,4,1,2,3,4]
+let arr=[1,2,3,4]
 let set=new Set()
 function containdupl(arr) {
     for (let num of arr){
