@@ -57,7 +57,7 @@ let index=0
 let temp=[]
 
    for (const val of set) {
-    if (!map.has(val+1)) {
+    if (map.has(val+1)) {
         temp.push(val+1)
         
     }
