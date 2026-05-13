@@ -49,8 +49,8 @@
 // brute force approch
 let arr=[2,5,7,9,11]
 let tar=7
-for (let i = 0; i < array.length; i++) {
-    for (let j = i+1; j < array.length; j++) {
+for (let i = 0; i < arr.length; i++) {
+    for (let j = i+1; j < arr.length; j++) {
         if ((arr[i]+arr[j])==tar) {
             console.log(i,j);
             
