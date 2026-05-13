@@ -53,7 +53,7 @@ let arr=[4,3,2,7,8,2,3,1];
 let temp=[]
 let set=new Set()
 for (let i = 1; i < arr.length; i++) {
-    if (!set.has(arr[i+1])) {
+    if (!set.has(arr[i]+1)) {
         temp.push[i+1]
         
         
