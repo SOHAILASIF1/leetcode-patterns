@@ -31,7 +31,7 @@
 let arr=[7,2,11,13]
 let target=9
 let map=new Map()
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < arr.length; i++) {
     if (map.has(target-arr[i])) {
         console.log(i);
         
