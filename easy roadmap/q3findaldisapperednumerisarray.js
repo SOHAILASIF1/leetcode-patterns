@@ -30,8 +30,8 @@ for (let i = 0; i < n; i++) {
         i++
         
     }
-    if (nums[i]==nums[i]&&nums[i+1]==nums[i+1]) {
-        console.log(nums[i+1]);
+    if (arr[i] !== arr[i - 1] + 1) {
+        temp.push(arr[i - 1] + 1)
         
         
     }
