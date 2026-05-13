@@ -71,6 +71,8 @@ let temp=[]
     
 
 console.log(map);
+console.log(temp);
+
 
 
 
