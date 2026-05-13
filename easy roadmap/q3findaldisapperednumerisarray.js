@@ -31,7 +31,7 @@ for (let i = 1; i < nums.length; i++) {
         
     }
     if (nums[i] !== nums[i - 1] + 1) {
-        temp.push(arr[i - 1] + 1)
+        temp.push(nums[i - 1] + 1)
         
         
     }
