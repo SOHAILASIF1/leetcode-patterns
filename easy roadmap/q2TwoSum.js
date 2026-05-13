@@ -33,7 +33,7 @@ let target=9
 let map=new Map()
 for (let i = 0; i < arr.length; i++) {
     if (map.has(target-arr[i])) {
-        console.log(i);
+        console.log(i,map.get(target-arr[i]));
         
         
     }
