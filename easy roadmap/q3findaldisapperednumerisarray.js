@@ -31,7 +31,8 @@ for (let i = 0; i < n; i++) {
         
     }
     if (nums[i]!==nums[i]+1) {
-        temp.push(nums[i]+1)
+        console.log(nums[i]+1);
+        
         
     }
     
