@@ -21,23 +21,28 @@
 
 // Follow up: Could you do it without extra space and in O(n) runtime? You may assume the returned list does not count as extra space.
 //brute force
-let nums = [4,3,2,7,8,2,3,1]
-let temp=[]
-let n=nums.length
-nums.sort((a,b)=>a-b)
-for (let i = 1; i < nums.length; i++) {
-    if (nums[i]==nums[i]) {
-        i++
-        
+// Brute Force Approach
+
+let nums = [4,3,2,7,8,2,3,1];
+
+let missing = [];
+
+for (let i = 1; i <= nums.length; i++) {
+    let found = false;
+
+    for (let j = 0; j < nums.length; j++) {
+        if (nums[j] === i) {
+            found = true;
+            break;
+        }
     }
-    if (nums[i] !== nums[i - 1] + 1) {
-        temp.push(nums[i - 1] + 1)
-        
-        
+
+    if (!found) {
+        missing.push(i);
     }
-    
-    
 }
+
+console.log(missing);
 console.log(nums);
 
 console.log(temp);
