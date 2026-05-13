@@ -53,8 +53,7 @@ let arr=[4,3,2,7,8,2,3,1];
 
 let set=new Set(arr)
 let map=new Map()
-let index=0
-for (let i = 1; i < arr.length; i++) {
+
    for (const val of set) {
     map.set(val,index)
 
@@ -64,7 +63,7 @@ for (let i = 1; i < arr.length; i++) {
 
     
     
-}
+
 console.log(map);
 
 
