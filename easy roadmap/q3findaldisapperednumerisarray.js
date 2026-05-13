@@ -50,16 +50,19 @@
 
 // using hashmap
 let arr=[4,3,2,7,8,2,3,1];
-let temp=[]
-let set=new Set()
+
+let set=new Set(arr)
+let map=new Map()
 for (let i = 1; i < arr.length; i++) {
-    if (!set.has(arr[i]+1)) {
-        temp.push[i+1]
-        
-        
-    }
-    set.add(arr[i])
+    set.forEach((num,i)=>{
+        map.set(num,i)
+
+    })
+
     
     
 }
-console.log(temp);
+
+
+
+
