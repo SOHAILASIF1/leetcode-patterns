@@ -28,14 +28,35 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 
-let arr=[7,11,2,13]
-let target=24
-let map=new Map()
-for (let i = 0; i < arr.length; i++) {
-    if (map.has(target-arr[i])) {
-        console.log(i,map.get(target-arr[i]));
+//optimal approch
+
+// let arr=[7,11,2,13]
+// let target=24
+// let map=new Map()
+// function twoSum(arr,target) {
+//     for (let i = 0; i < arr.length; i++) {
+//     if (map.has(target-arr[i])) {
+//         console.log(i,map.get(target-arr[i]));
         
         
+//     }
+//     map.set(arr[i],i)
+// }
+    
+// }
+// twoSum(arr,target)
+
+// brute force approch
+let arr=[2,5,7,9,11]
+let tar=7
+for (let i = 0; i < array.length; i++) {
+    for (let j = i+1; j < array.length; j++) {
+        if ((arr[i]+arr[j])==tar) {
+            console.log(i,j);
+            
+            
+        }
+      
     }
-    map.set(arr[i],i)
+    
 }
