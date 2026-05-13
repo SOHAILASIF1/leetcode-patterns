@@ -25,7 +25,7 @@ let nums = [4,3,2,7,8,2,3,1]
 let temp=[]
 let n=nums.length
 nums.sort((a,b)=>a-b)
-for (let i = 0; i < n; i++) {
+for (let i = 1; i < arr.length; i++) {
     if (nums[i]==nums[i]) {
         i++
         
