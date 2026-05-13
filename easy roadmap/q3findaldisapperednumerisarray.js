@@ -49,19 +49,15 @@
 
 
 // using hashmap
-let arr = [4,3,2,7,8,2,3,1];
+let nums = [4,3,2,7,8,2,3,1];
 
-let set = new Set(arr);
-let map = new Map();
-let temp = [];
+let set = new Set(nums);
+let missing = [];
 
-for (const val of set) {
-
-    if (map.has(val + 1)) {
-        temp.push(val + 1);
+for (let i = 1; i <= nums.length; i++) {
+    if (!set.has(i)) {
+        missing.push(i);
     }
-
-    map.set(val, true);
 }
 
-console.log(temp);
+console.log(missing);
