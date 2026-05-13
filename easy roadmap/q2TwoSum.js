@@ -28,7 +28,7 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 
-let arr=[7,2,11,13]
+let arr=[7,11,2,13]
 let target=9
 let map=new Map()
 for (let i = 0; i < arr.length; i++) {
