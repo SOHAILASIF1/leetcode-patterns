@@ -62,6 +62,8 @@ for (let i = 1; i < arr.length; i++) {
     
     
 }
+console.log(map);
+
 
 
 
