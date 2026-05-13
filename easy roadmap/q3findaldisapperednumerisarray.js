@@ -54,8 +54,13 @@ let arr=[4,3,2,7,8,2,3,1];
 let set=new Set(arr)
 let map=new Map()
 let index=0
+let temp=[]
 
    for (const val of set) {
+    if (!map.has(val+1)) {
+        temp.push(val+1)
+        
+    }
     map.set(val,index)
 
     index++
