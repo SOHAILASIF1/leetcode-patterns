@@ -45,4 +45,4 @@ for (let i = 1; i <= nums.length; i++) {
 console.log(missing);
 console.log(nums);
 
-console.log(temp);
+
