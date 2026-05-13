@@ -23,26 +23,42 @@
 //brute force
 // Brute Force Approach
 
-let nums = [4,3,2,7,8,2,3,1];
+// let nums = [4,3,2,7,8,2,3,1];
 
-let missing = [];
+// let missing = [];
 
-for (let i = 1; i <= nums.length; i++) {
-    let found = false;
+// for (let i = 1; i <= nums.length; i++) {
+//     let found = false;
 
-    for (let j = 0; j < nums.length; j++) {
-        if (nums[j] === i) {
-            found = true;
-            break;
-        }
+//     for (let j = 0; j < nums.length; j++) {
+//         if (nums[j] === i) {
+//             found = true;
+//             break;
+//         }
+//     }
+
+//     if (!found) {
+//         missing.push(i);
+//     }
+// }
+
+// console.log(missing);
+// console.log(nums);
+
+//
+
+
+// using hashmap
+let arr=[4,3,2,7,8,2,3,1];
+let temp=[]
+let set=new Set()
+for (let i = 1; i < arr.length; i++) {
+    if (!set.has(arr[i+1])) {
+        temp.push[i+1]
+        
+        
     }
-
-    if (!found) {
-        missing.push(i);
-    }
+    set.add(arr[i])
+    
+    
 }
-
-console.log(missing);
-console.log(nums);
-
-
