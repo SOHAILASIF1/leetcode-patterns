@@ -36,20 +36,37 @@
 
 //first approch math approch
 
+// let nums = [9,6,4,2,3,5,7,0,1]
+// var missingNumber = function(nums) {
+//     let sum = 0
+    
+//     nums.forEach(num => {
+//         sum += num
+//     })
+    
+//     let n = nums.length
+//     let expectedSum = (n * (n + 1)) / 2
+    
+//     return expectedSum - sum
+// }
+// console.log(missingNumber(nums));
+
+
+//hashing approch
+// let nums = [9,6,4,2,3,5,7,0,1]
 let nums = [9,6,4,2,3,5,7,0,1]
-var missingNumber = function(nums) {
-    let sum = 0
+
+function missingNumber(nums) {
+    let set=new Set(nums)
+    for (let i = 0; i < nums.length; i++) {
+        const element = array[i];
+        
+    }
     
-    nums.forEach(num => {
-        sum += num
-    })
     
-    let n = nums.length
-    let expectedSum = (n * (n + 1)) / 2
-    
-    return expectedSum - sum
 }
-console.log(missingNumber(nums));
+console.log(set);
+
 
 
 
