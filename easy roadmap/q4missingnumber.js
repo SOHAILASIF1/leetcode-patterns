@@ -54,26 +54,40 @@
 
 //hashing approch
 // let nums = [9,6,4,2,3,5,7,0,1]
-let nums = [9,6,4,2,3,5,7,0,1]
+// let nums = [9,6,4,2,3,5,7,0,1]
 
-function missingNumber(nums) {
-    let set=new Set(nums)
-    for (let i = 0; i < nums.length; i++) {
-        if (!set.has(i)) {
-            return i
+// function missingNumber(nums) {
+//     let set=new Set(nums)
+//     for (let i = 0; i < nums.length; i++) {
+//         if (!set.has(i)) {
+//             return i
             
-        }
+//         }
      
         
+//     }
+
+
+    
+    
+// }
+
+// console.log(missingNumber(nums));
+
+
+
+// ok next one is sorting approch
+
+let nums=[9,6,4,2,3,5,7,0,1]
+
+nums.sort((a,b)=>a-b)
+for (let i = 0; i <=nums.length; i++) {
+    if (i!=arr[i]) {
+        console.log(i);
+        
+        
     }
-
-
     
     
 }
-
-console.log(missingNumber(nums));
-
-
-
 
