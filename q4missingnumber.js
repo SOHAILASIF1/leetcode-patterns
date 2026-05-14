@@ -24,7 +24,7 @@
 
 // Example 3:
 
-// Input: nums = [9,6,4,2,3,5,7,0,1]
+// Input: 
 
 // Output: 8
 
@@ -35,14 +35,21 @@
  
 
 //first approch math approch
-let arr=[9,6,4,2,3,5,7,0,1]
-let n =arr.length
-let sum=0
 
-for (let i = 0; i < n; i++) {
-    sum+=arr[i]
+let nums = [9,6,4,2,3,5,7,0,1]
+var missingNumber = function(nums) {
+    let sum = 0
     
+    nums.forEach(num => {
+        sum += num
+    })
     
+    let n = nums.length
+    let expectedSum = (n * (n + 1)) / 2
+    
+    return expectedSum - sum
 }
-console.log(sum);
+console.log(missingNumber(nums));
+
+
 
