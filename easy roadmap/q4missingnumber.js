@@ -59,7 +59,7 @@ let nums = [9,6,4,2,3,5,7,0,1]
 function missingNumber(nums) {
     let set=new Set(nums)
     for (let i = 0; i < nums.length; i++) {
-        const element = array[i];
+        array[i];
         
     }
 console.log(set);
