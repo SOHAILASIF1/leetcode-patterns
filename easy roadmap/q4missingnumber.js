@@ -44,5 +44,9 @@ for (let i = 0; i < n; i++) {
     
     
 }
-console.log(sum);
+let n = arr.length
+let expectedSum = (n * (n + 1)) / 2
+let missingNumber = expectedSum - sum
+
+console.log(missingNumber) // 8
 
