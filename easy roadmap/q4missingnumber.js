@@ -62,10 +62,12 @@ function missingNumber(nums) {
         const element = array[i];
         
     }
+console.log(set);
+
     
     
 }
-console.log(set);
+missingNumber(nums)
 
 
 
