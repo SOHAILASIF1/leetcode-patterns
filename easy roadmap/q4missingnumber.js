@@ -71,7 +71,8 @@ function missingNumber(nums) {
     
     
 }
-missingNumber(nums)
+
+console.log(missingNumber(nums));
 
 
 
