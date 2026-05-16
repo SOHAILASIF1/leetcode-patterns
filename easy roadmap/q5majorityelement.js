@@ -26,7 +26,7 @@
 //brute force approch
 let nums = [2,2,1,1,1,2,2]
 let count=0
-let first=arr[0]
+let first=nums[0]
 for (let i = 1; i < nums.length; i++) {
     if (first==nums[i]) {
         count++
