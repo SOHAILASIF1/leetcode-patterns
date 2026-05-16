@@ -25,7 +25,7 @@
 // Follow-up: Could you solve the problem in linear time and in O(1) space?
 //brute force approch
 let nums = [2,2,1,1,1,2,2]
-let count=0
+let count=1
 let first=nums[0]
 for (let i = 1; i < nums.length; i++) {
     if (first==nums[i]) {
