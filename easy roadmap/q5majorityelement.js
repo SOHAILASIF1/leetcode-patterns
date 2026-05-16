@@ -32,7 +32,13 @@ for (let i = 1; i < nums.length; i++) {
         count++
         
     }
+    first=nums[i]
+    count=1
+    
+    
    
 }
 console.log(count);
+console.log(first);
+
 
