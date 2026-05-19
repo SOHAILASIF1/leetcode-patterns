@@ -57,8 +57,8 @@ for (let i = 0; i < nums.length; i++) {
         
         
     }
-    map.set(nums[i],count)
-    count=map.get(nums[i])
+    map.set(nums[i],map.get(nums[i])||count)
+    
     
     
 }
