@@ -56,3 +56,4 @@ for (let i = 0; i < nums.length; i++) {
     map.set(arr[i],count)
     
 }
+console.log(map);
