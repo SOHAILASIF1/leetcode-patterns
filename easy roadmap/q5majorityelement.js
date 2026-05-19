@@ -53,7 +53,7 @@ for (let i = 0; i < nums.length; i++) {
         count ++
         
     }
-    map.set(arr[i],count)
+    map.set(nums[i],count)
     
 }
 console.log(map);
