@@ -46,21 +46,26 @@ let nums = [2,2,1,3,3,3,3,1,2,3,3,3,3,2,3,3];
 //hash map
 
 //hash map approch
-let map = new Map()
+// let nums = [2,2,1,3,3,3,3,1,2,3,3,3,3,2,3,3];
 
-let count=1
+let map = new Map();
+
 for (let i = 0; i < nums.length; i++) {
-    
-    
+
     if (map.has(nums[i])) {
-        count ++
-        
-        
+        map.set(nums[i], map.get(nums[i]) + 1);
+    } 
+    else {
+        map.set(nums[i], 1);
     }
-    map.set(nums[i],count)
-    count=map.get(nums[i])
-    
-    
-    
 }
+
 console.log(map);
+
+// majority element find
+for (const [key, value] of map) {
+
+    if (value > Math.floor(nums.length / 2)) {
+        console.log("Majority Element:", key);
+    }
+}
