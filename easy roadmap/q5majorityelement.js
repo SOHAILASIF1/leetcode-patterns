@@ -26,20 +26,33 @@
 //brute force approch
 let nums = [2,2,1,3,3,3,3,1,2,3,3,3,3,2,3,3];
 
+// for (let i = 0; i < nums.length; i++) {
+
+//     let count = 0;
+
+//     for (let j = 0; j < nums.length; j++) {
+
+//         if (nums[i] === nums[j]) {
+//             count++;
+//         }
+//     }
+
+//     if (count > Math.floor(nums.length / 2)) {
+//         console.log(nums[i]);
+//         break;
+//     }
+// }
+
+//hash map
+
+//hash map approch
+let map = new Map()
 for (let i = 0; i < nums.length; i++) {
-
-    let count = 0;
-
-    for (let j = 0; j < nums.length; j++) {
-
-        if (nums[i] === nums[j]) {
-            count++;
-        }
+    let count=1
+    if (map.has(arr[i])) {
+        count ++
+        
     }
-
-    if (count > Math.floor(nums.length / 2)) {
-        console.log(nums[i]);
-        break;
-    }
+    map.set(arr[i],count)
+    
 }
-
